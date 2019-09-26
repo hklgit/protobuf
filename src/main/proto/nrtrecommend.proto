@@ -1,20 +1,20 @@
-option java_package = "com.protobuftest.protobuf";
-option java_outer_classname = "RecoDataProbuf";
+option java_package = "com.coocaa.protobuf";
+option java_outer_classname = "RecomDataProbuf";
 
-//message RecoData{
-//required string did = 1;
-//required string data =2;
-//
-//enum Category{
-//    MOVIE=0;
-//    TV=1;
-//    CHILDREN=2;
-//}
-//optional Category type = 3 [default = MOVIE];
-//
-//}
+message RecoData{
+required string did = 1;
+required string data =2;
 
-message Person {
+enum Category{
+    MOVIE=0;
+    TV=1;
+    CHILDREN=2;
+}
+optional Category type = 3 [default = MOVIE];
+
+}
+
+/*message Person {
  required string name = 1;
  required int32 id = 2;
  optional string email = 3;
@@ -35,4 +35,4 @@ message Person {
 
 message AddressBook {
  repeated Person person = 1;
-}
+}*/
